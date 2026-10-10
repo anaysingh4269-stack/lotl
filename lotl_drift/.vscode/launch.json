@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run demo (synthetic, no download needed)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_experiment.py",
+      "args": ["--data-source", "synthetic"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Run on real LANL data",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_experiment.py",
+      "args": ["--data-source", "lanl", "--data-dir", "data/raw"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
